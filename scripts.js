@@ -91,8 +91,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const password = document.getElementById('password').value;
 
             // Usuário e senha fixos para exemplo
-            const adminUser = 'admin';
-            const adminPass = '123456';
+            const adminUser = 'soso';
+            const adminPass = '1947';
 
             if (username === adminUser && password === adminPass) {
                 localStorage.setItem('isAdmin', 'true');
