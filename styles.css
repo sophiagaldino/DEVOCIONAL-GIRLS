@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fc8aa6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f98ba6;
+    color: white;
+    padding: 10 px;
+    text-align: center;
+}
+
+.imagem-capa {
+    position: absolute;
+    top: -10px;
+    right: 1799px;
+    width: 120px;
+    /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #f98ba6;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Adicione o CSS a seguir ao seu arquivo styles.css */
+.aviso {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    position: relative;
+}
+
+.aviso h3 {
+    margin: 0 0 10px 0;
+}
+
+.aviso p {
+    margin: 0;
+}
+
+.aviso small {
+    display: block;
+    margin-top: 10px;
+    color: #777;
+}
+
+.aviso button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+
+/* Estilos para a página "Sobre" */
+main section {
+    margin: 20px 0;
+}
+
+main h2 {
+    color: #2c3e50;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+header,
+footer {
+    background-color: hsl(0, 0%, 0%);
+    padding: 10px 0;
+    /*cor do ngc de cima*/
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+/* Estilos para a página de contato */
+main section {
+    margin: 20px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #ff00bf;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #fc1cc4;
+}
+
+/* styles.css */
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #ff00bf;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-voltar:hover {
+    background-color: #fc1cc4;
+}

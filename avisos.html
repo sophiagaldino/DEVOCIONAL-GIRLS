@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avisos - Seu Site Cristão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Avisos Importantes</h1>
+        <img src="logo.png" alt="Imagem de Capa" class="imagem-capa">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="avisos.html">Avisos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Postar Novo Aviso</h2>
+        <form id="avisoForm">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+            <button type="submit">Postar Aviso</button>
+        </form>
+
+        <h2>Avisos Recentes</h2>
+        <div id="avisos">
+            <!-- Avisos postados aparecerão aqui -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Seu Site Cristão</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+<!-- No arquivo avisos.html, adicione botões de edição e exclusão -->
+<div id="avisos">
+    <!-- Exemplo de estrutura de um aviso -->
+    <!-- Será gerado dinamicamente pelo JavaScript -->
+    <div class="aviso">
+        <h3>Título do Aviso</h3>
+        <p>Conteúdo do aviso.</p>
+        <small>Data e Hora</small>
+        <button onclick="editarAviso(this)">Editar</button>
+        <button onclick="excluirAviso(this)">Excluir</button>
+    </div>
+</div>
+
+
+</html>

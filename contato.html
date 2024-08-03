@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Seu Site Cristão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contato</h1>
+        <img src="logo.png" alt="Imagem de Capa" class="imagem-capa">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="avisos.html">Avisos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Entre em Contato Conosco</h2>
+            <form action="https://formspree.io/f/xldrbakv" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="telefone">Número de Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+
+                <button type="submit">Enviar Mensagem</button>
+                <p id="resultado"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Seu Site Cristão</p>
+    </footer>
+</body>
+
+</html>
