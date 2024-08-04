@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avisos - Seu Site Cristão</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -17,32 +19,21 @@
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="login.html">Login</a></li>
             <li><a href="avisos.html">Avisos</a></li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Postar Novo Aviso</h2>
-        <form id="avisoForm">
-            <label for="titulo">Título:</label>
-            <input type="text" id="titulo" name="titulo" required><br><br>
-
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
-
-            <button type="submit">Postar Aviso</button>
-        </form>
-
-        <h2>Avisos Recentes</h2>
-        <div id="avisos">
-            <!-- Avisos postados aparecerão aqui -->
+        <h2>Mensagem do Dia</h2>
+        <div id="mensagemDoDia">
+            <!-- Mensagem do dia será exibida aqui -->
+            <p id="mensagemTexto">Aqui está a sua mensagem do dia: <strong>“O amor é a base de todas as
+                    coisas.”</strong></p>
         </div>
     </main>
     <footer>
         <p>&copy; 2024 Seu Site Cristão</p>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 
 </html>

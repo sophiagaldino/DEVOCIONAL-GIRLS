@@ -1,77 +1,122 @@
+/* Estilização geral do corpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fc8aa6;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Cabeçalho */
 header {
-    background-color: #f98ba6;
+    background-color: #000000;
     color: white;
-    padding: 10 px;
+    padding: 1rem;
     text-align: center;
 }
 
-.imagem-capa {
-    position: absolute;
-    top: -10px;
-    right: 1799px;
-    width: 120px;
-    /* Ajuste o tamanho conforme necessário */
-    height: auto;
+header h1 {
+    margin: 0;
 }
 
+header .imagem-capa {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Navegação */
+nav {
+    background-color: #fc8aa6;
+}
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #000000;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 10px;
+    margin: 0;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
+    padding: 1rem;
+    display: block;
 }
 
 nav ul li a:hover {
-    background-color: #f98ba6;
+    background-color: #000000;
 }
 
+/* Conteúdo principal */
 main {
-    padding: 20px;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
+main h2 {
+    color: #004d40;
+}
+
+form {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form textarea {
     width: 100%;
-    bottom: 0;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Adicione o CSS a seguir ao seu arquivo styles.css */
+form button {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #002e20;
+}
+
+/* Avisos */
+#avisos {
+    margin-top: 1rem;
+}
+
 .aviso {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-bottom: 15px;
-    background-color: #fff;
-    position: relative;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    border-left: 5px solid #fc8aa6;
 }
 
 .aviso h3 {
-    margin: 0 0 10px 0;
+    margin-top: 0;
+    color: #fc8aa6;
 }
 
 .aviso p {
@@ -80,102 +125,31 @@ footer {
 
 .aviso small {
     display: block;
-    margin-top: 10px;
-    color: #777;
+    margin-top: 0.5rem;
+    color: #666;
 }
 
 .aviso button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    margin-left: 5px;
-    padding: 5px 10px;
-}
-
-/* Estilos para a página "Sobre" */
-main section {
-    margin: 20px 0;
-}
-
-main h2 {
-    color: #2c3e50;
-}
-
-main p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-header,
-footer {
-    background-color: hsl(0, 0%, 0%);
-    padding: 10px 0;
-    /*cor do ngc de cima*/
-}
-
-footer p {
-    text-align: center;
-    margin: 0;
-}
-
-/* Estilos para a página de contato */
-main section {
-    margin: 20px 0;
-}
-
-form {
-    max-width: 600px;
-    margin: auto;
-}
-
-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    padding: 10px 15px;
-    background-color: #ff00bf;
-    color: #fff;
+    background-color: #004d40;
+    color: white;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #fc1cc4;
-}
-
-/* styles.css */
-.btn-voltar {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    color: #fff;
-    background-color: #ff00bf;
-    text-decoration: none;
+    padding: 0.5rem;
     border-radius: 5px;
-    text-align: center;
+    cursor: pointer;
+    margin-right: 0.5rem;
 }
 
-.btn-voltar:hover {
-    background-color: #fc1cc4;
+.aviso button:hover {
+    background-color: #002e20;
+}
+
+/* Rodapé */
+footer {
+    background-color: #fc8aa6;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
