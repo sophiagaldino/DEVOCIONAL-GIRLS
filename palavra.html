@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavra do Dia - Devocional Girls</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Palavra do Dia</h1>
+        <img src="logo.png" alt="Imagem de Capa" class="imagem-capa">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="palavra.html">Palavra do Dia</a></li>
+            <li><a href="contato.html">Conexão Girls</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="palavras-postadas">
+            <h2>Palavras Recentes</h2>
+            <!-- Aqui você pode adicionar um script ou método para exibir as palavras enviadas -->
+        </section>
+        <section>
+            <h2>Compartilhe uma Palavra!</h2>
+            <p>Preencha os campos abaixo para enviar a sua palavra para ser postada:</p>
+
+            <form action="https://formspree.io/f/mvgpalok" method="POST">
+                <label for="palavra">Sua Palavra:</label>
+                <textarea id="palavra" name="palavra" rows="4" required></textarea><br><br>
+
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="anonimo">
+                    <input type="checkbox" id="anonimo" name="anonimo">
+                    Prefiro não me identificar
+                </label><br><br>
+
+                <button type="submit">Enviar Palavra</button>
+            </form>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Devocional Girls</p>
+    </footer>
+    <script>
+        document.getElementById('anonimo').addEventListener('change', function () {
+            const nomeField = document.getElementById('nome');
+            const anonimoField = document.getElementById('anonimo-field');
+
+            if (this.checked) {
+                nomeField.value = ''; // Limpa o campo de nome
+                nomeField.disabled = true; // Desativa o campo de nome
+                anonimoField.value = 'true'; // Define o valor para indicar anonimato
+            } else {
+                nomeField.disabled = false; // Habilita o campo de nome
+                anonimoField.value = 'false'; // Define o valor para indicar que não é anônimo
+            }
+        });
+    </script>
+</body>
+
+</html>
